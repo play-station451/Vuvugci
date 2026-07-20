@@ -8,4 +8,4 @@ build_script:
   - npm run dist:win
 
 artifacts:
-  - path: dist\*.exeu
+  - path: dist\*.exe
