@@ -1,19 +1,25 @@
-"scripts": {
-  "start": "electron .",
-  "dist:win": "electron-builder --win --x64"
-},
-"devDependencies": {
-  "electron": "^31.0.0",
-  "electron-builder": "^24.13.3"
-},
-"build": {
-  "appId": "play.isa.retard",
-  "productName": "R3tard",
-  "files": [
-    "main.js",
-    "index.html"
-  ],
-  "win": {
-    "target": "portable"
+{
+  "name": "R3tard",
+  "version": "1.0.0",
+  "description": "Fuck discord",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "play.is.retarded",
+    "productName": "R3tard",
+    "files": [
+      "main.js",
+      "index.html"
+    ],
+    "win": {
+      "target": "portable"
+    }
   }
 }
