@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dist:win": "electron-builder --win --x64"
+    "dist:win": "electron-builder --win --x64",
+    "dist:linux": "electron-builder --linux --x64"
   },
   "devDependencies": {
     "electron": "^31.0.0",
@@ -20,6 +21,10 @@
     ],
     "win": {
       "target": "portable"
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Network"
     }
   }
 }
