@@ -1,11 +1,15 @@
-image: Visual Studio 2022
+image:
+  - Visual Studio 2022
+  - Ubuntu2004
 
 install:
   - node --version
   - npm install
 
 build_script:
-  - npm run dist:win
+  - sh: npm run dist:linux
+  - cmd: npm run dist:win
 
 artifacts:
   - path: dist\*.exe
+  - path: dist/*.AppImage
